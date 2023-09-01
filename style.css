@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #696969;
+}
+.Hero {
+  font-family: "Poppins", sans-serif;
+  background-image: url(bg.jpg);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+span {
+  font-size: 40px;
+  font-weight: 700;
+  position: fixed;
+  left: 110px;
+  top: 50px;
+  color: #ff00ff;
+  font-weight: 600;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px 0 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+nav ul li a {
+  color: #ab09fb;
+  text-decoration: none;
+}
+.btn-signup {
+  margin-right: 50px;
+  text-decoration: none;
+}
+.btn {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ededed;
+  border: none;
+  text-decoration: none;
+  padding: 10px 35px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  transition: 0.5s;
+}
+.btn:hover {
+  border-top-right-radius: 30px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Russo+One&display=swap");
+
+.centent {
+  margin: 0 50px;
+  margin-top: 10%;
+  max-width: 600px;
+}
+.centent h1 {
+  font-size: 60px;
+  color: #222;
+  animation-delay: 0.5s;
+}
+.centent p {
+  color: #333;
+  margin: 30px 0 50px;
+  animation-delay: 1s;
+}
+.centent .btn {
+  padding: 15px 80px;
+  animation-delay: 0.5s;
+}
+.feature-image {
+  width: 570px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+}
+.anim {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: moveup 0.5s linear forwards;
+  transition: 3s;
+}
+@keyframes moveup {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
